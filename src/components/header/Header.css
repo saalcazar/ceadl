@@ -1,0 +1,15 @@
+.main-menu {
+    height: 90px;
+}
+
+.logo-menu{
+    width: 200px;
+}
+
+.nav-menu{
+    width: 50%;
+}
+
+.a-light:hover{
+    color: var(--a-color-dark);
+}
