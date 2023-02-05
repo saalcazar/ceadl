@@ -40,6 +40,10 @@
     color: var(--p-color);
 }
 
+.paragraph-light{
+    color: var(--a-color-light);
+}
+
 .img-container{
     overflow: hidden;
 }
@@ -56,4 +60,10 @@
     background-color: var(--bg-color-mid);
     color: var(--a-color-light);
     border-radius: var(--btn-border-radius);
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+}
+
+.contrast{
+    background: rgba(0, 0, 0, .30);
 }

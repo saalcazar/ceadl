@@ -1,9 +1,9 @@
-import Slider from '../../components/slider/Slider'
+import Slider from './slider/Slider'
 const Home = () => {
     return(
-        <div className="main-about">
+        <section className="main-container">
             <Slider />
-        </div>
+        </section>
     )
 }
 

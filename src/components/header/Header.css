@@ -1,3 +1,8 @@
+.menu-container{
+    position: relative;
+    box-shadow: var(--shadow);
+    z-index: 20;
+}
 .main-menu {
     height: 90px;
 }

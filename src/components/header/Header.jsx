@@ -5,7 +5,7 @@ const Header = () => {
     const navigation = useNavigate()
     return(
         <>
-            <div className="main-container bg-dark">
+            <div className="main-container menu-container bg-dark">
                 <div className="container between main-menu">
                     <div className="img-container logo-menu">
                         <NavLink to="/"><img className="logo" src={logo} alt="" /></NavLink>
