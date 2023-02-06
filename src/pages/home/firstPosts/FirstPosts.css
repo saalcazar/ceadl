@@ -1,4 +1,30 @@
 .main-firstPost{
-    margin-top: 1rem;
     flex-direction: column;
+    height: 500px;
+}
+
+.cards{
+    margin-top: 1.5rem;
+}
+
+.card{
+    width: 275px;
+    height: 385px;
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.article-card{
+    padding: .5rem .75rem;
+}
+
+.title-card{
+    color: var(--title-dark-color);
+    margin-bottom: .75rem;
+}
+
+.p-card{
+    margin-bottom: .75rem;
 }
