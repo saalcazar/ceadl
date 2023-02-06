@@ -11,10 +11,10 @@
 
 :root{
     --bg-color: rgb(249, 249, 249);
-    --color-principal: rgb(16, 59, 84);
+    --color-principal: rgba(58, 109, 136, 1);
     --color-dark: rgba(12, 46, 65, 1);
     --bg-color-dark: var(--color-principal);
-    --bg-color-mid: rgb(7, 145, 223);
+    --bg-color-mid: rgb(76, 156, 199);
     --bg-color-mid-op: rgba(7, 145, 223, .5);
     --bg-color-light: white;
     --a-color-dark: var(--bg-color-mid);

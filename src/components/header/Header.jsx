@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo-tres.svg'
 import "./Header.css"
 const Header = () => {
     const navigation = useNavigate()

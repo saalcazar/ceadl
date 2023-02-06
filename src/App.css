@@ -18,6 +18,7 @@
 
 .bg-dark{
     background-color: var(--bg-color-dark);
+    background-image: linear-gradient(to right, white, rgba(58, 109, 136, 1));
 }
 
 .title-dark{
