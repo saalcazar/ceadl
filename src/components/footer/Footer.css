@@ -1,0 +1,66 @@
+.footer-main{
+    background-color: var(--color-dark);
+}
+
+.footer{
+    height: 300px;
+}
+
+.footer-one, .footer-two, .footer-three{
+    width: 300px;
+    height: 100%;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.title-one, .title-two, .title-three{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.adress{
+    width: 80%;
+}
+
+.p-address{
+    margin-bottom: .5rem;
+}
+
+.social{
+    margin-top: .75rem;
+}
+
+.social-footer{
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+
+.footer-list li{
+    margin-bottom: .5rem;
+}
+
+.ddrr{
+    color: rgba(217, 217, 217, 0.5) ;
+    border-top: 1px solid;
+}
+
+.ddrr p{
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+    color: rgba(217, 217, 217, 0.5) ;
+}
+
+.footer-three{
+    display: flex;
+    align-items: center;
+}
+
+.logo-uno, .logo-dos {
+    width: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.logo-uno{
+    background-color: yellow;
+}
+

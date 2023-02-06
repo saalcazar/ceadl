@@ -1,7 +1,3 @@
-.main-container{
-    width: 100vw;
-}
-
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -36,6 +32,10 @@
     text-shadow: var(--shadow);
 }
 
+.title-mid{
+    color :var(--bg-color-mid);
+}
+
 .paragraph{
     color: var(--p-color);
 }
@@ -64,6 +64,20 @@
     margin: 1rem 0;
 }
 
+.button-light{
+    background-color: var(--bg-color-light);
+    color: var(--a-color-dark);
+    border-radius: var(--btn-border-radius);
+    padding: .75rem 1.5rem;
+    margin: 1rem 0;
+}
+
 .contrast{
     background: rgba(0, 0, 0, .30);
+}
+
+.separator{
+    background-color: var(--bg-color);
+    height: 85%;
+    width: 1px;
 }

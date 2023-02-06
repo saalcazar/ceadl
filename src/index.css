@@ -11,14 +11,15 @@
 
 :root{
     --bg-color: rgb(249, 249, 249);
-    --color-principal: rgba(16, 59, 84, 1);
+    --color-principal: rgb(16, 59, 84);
     --color-dark: rgba(12, 46, 65, 1);
     --bg-color-dark: var(--color-principal);
-    --bg-color-mid: rgba(7, 145, 223, 1);
+    --bg-color-mid: rgb(7, 145, 223);
+    --bg-color-mid-op: rgba(7, 145, 223, .5);
     --bg-color-light: white;
     --a-color-dark: var(--bg-color-mid);
     --a-color-light: var(--bg-color-light);
-    --p-color: rgba(33, 25, 21, 1);
+    --p-color: rgb(33, 25, 21);
     --title-dark-color: var(--color-principal);
     --title-light-color: white;
     --card-border-radius: 15px;

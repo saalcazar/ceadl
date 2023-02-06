@@ -8,12 +8,23 @@
 }
 
 .card{
+    position: relative;
     width: 275px;
     height: 385px;
     background-color: white;
     border-radius: var(--card-border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-card);
+    flex-direction: column;
+}
+
+.img-card-first{
+    width: 110%;
+    transition: width .3s ease;
+}
+
+.card:hover .img-card-first{
+    width: 150%;
 }
 
 .article-card{

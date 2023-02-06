@@ -3,7 +3,6 @@ import './ParticipateUs.css'
 const ParticipateUs = () => {
     return(
         <section className="main-participate center img-container">
-            <img src={img} alt="" />
             <article className='participate-article center container'>
                 <h2 className='title-light title-participate'>Participa con nosotros</h2>
                 <div className="contrast ">

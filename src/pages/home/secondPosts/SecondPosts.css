@@ -1,0 +1,33 @@
+.main-secondposts{
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.img-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img-card-article{
+    width: 215%;
+}
+
+.card-article{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color-mid-op);
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.card-title{
+    margin-bottom: 1rem;
+}
+
+.card-article:hover{
+    opacity: 1;
+}

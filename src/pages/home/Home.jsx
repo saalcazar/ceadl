@@ -1,13 +1,17 @@
+import AboutStream from './aboutStream/AboutStream'
 import FirstPosts from './firstPosts/FirstPosts'
 import ParticipateUs from './participateUs/ParticipateUs'
+import SecondPosts from './secondPosts/SecondPosts'
 import Slider from './slider/Slider'
 const Home = () => {
     return(
-        <section className="main-container">
+        <>
             <Slider />
             <FirstPosts />
             <ParticipateUs />
-        </section>
+            <SecondPosts />
+            <AboutStream />
+        </>
     )
 }
 
