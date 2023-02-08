@@ -50,7 +50,6 @@ const Slider = () => {
                             img={img}
                             title={title}
                             p={p}
-                            classSlider={`slider active`}
                         />
                     ))[currentSlide]
                 }
