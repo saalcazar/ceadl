@@ -1,3 +1,6 @@
+import imgUno from './img/mujeres.jpg'
+import imgDos from './img/violencia.jpg'
+import imgTres from './img/lgbt.jpg'
 import { useEffect, useState } from 'react'
 import Slide from './slide/Slide'
 import "./Slider.css"
@@ -7,20 +10,20 @@ const IMG_URL = import.meta.env.VITE_IMG_URL
 const slide = [
     {
         id: 0,
-        img: `${IMG_URL}mujeres.jpg`, 
+        img: `${imgUno}`, 
         title :"Mujer y economía",
         p:"Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
     },
 
     {
         id: 1,
-        img: `${IMG_URL}violencia.jpg`, 
+        img: `${imgDos}`, 
         title: "Violencia de género",
         p: "Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
     },
     {
         id: 2,
-        img: `${IMG_URL}lgbt.jpg`, 
+        img: `${imgTres}`, 
         title: "Por el derecho a la inclución",
         p: "Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
     }
