@@ -14,12 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    display: none;
     transition: opacity 1s ease-in-out;
 }
 
 .slider.active{
-    opacity: 1;
+    display: flex;
 }
 
 .img-slider{
