@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
-
 const Slide = (props) => {
-
     return(
         <>
             <div key={props.id} className={props.classSlider}>
@@ -17,9 +14,9 @@ const Slide = (props) => {
                     </div>
                     <span className="button-dark read-more"><a className="a-light a-slide" href="">Leer más...</a></span>
                     <div className="slider-navigation center">
-                        <span className="round-slider round-active"></span>
-                        <span className="round-slider"></span>
-                        <span className="round-slider"></span>
+                        <span className={`round-slider ${props.id === 0 ? 'round-active': ''}`}></span>
+                        <span className={`round-slider ${props.id === 1 ? 'round-active': ''}`}></span>
+                        <span className={`round-slider ${props.id === 2 ? 'round-active': ''}`}></span>
                     </div>
                 </article>
             </div>
