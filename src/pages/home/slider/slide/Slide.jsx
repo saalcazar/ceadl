@@ -1,7 +1,7 @@
 const Slide = (props) => {
     return(
         <>
-            <div key={props.id} className="slider">
+            <div key={props.id} className={`slider ${props.class}`}>
                 <div className='img-slider img-container center'>
                     <img src={props.img} alt={props.img} />
                 </div>
