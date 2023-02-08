@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react'
 import Slide from './slide/Slide'
 import "./Slider.css"
 
-const IMG_URL = import.meta.env.VITE_IMG_URL
-
 const slide = [
     {
         id: 0,
