@@ -1,6 +1,6 @@
-import imgUno from './img/mujeres.jpg'
-import imgDos from './img/violencia.jpg'
-import imgTres from './img/lgbt.jpg'
+import imgUno from './img/mujeres.avif'
+import imgDos from './img/violencia.webp'
+import imgTres from './img/lgbt.avif'
 import { useEffect, useState } from 'react'
 import Slide from './slide/Slide'
 import "./Slider.css"

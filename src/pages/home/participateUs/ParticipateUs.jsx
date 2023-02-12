@@ -1,4 +1,3 @@
-import img from './img/participa-con-nosotros.jpg'
 import './ParticipateUs.css'
 const ParticipateUs = () => {
     return(

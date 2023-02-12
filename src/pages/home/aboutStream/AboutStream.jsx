@@ -1,5 +1,5 @@
-import enVivo from './img/envivo.jpg'
-import streamer from './img/streamer.jpg'
+import enVivo from './img/envivo.webp'
+import streamer from './img/streamer.webp'
 import './AboutStream.css'
 const AboutStream = () => {
     return(
