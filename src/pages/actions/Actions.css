@@ -1,0 +1,17 @@
+.action, .actionDos{
+    height: 250px;
+}
+.img-action{
+    width: 420px;
+    height: 250px;
+}
+
+.p-action{
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.article-prevention{
+    width: 450px;
+    padding: 1.5rem;
+}

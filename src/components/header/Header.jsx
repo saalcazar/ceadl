@@ -4,7 +4,7 @@ import "./Header.css"
 const Header = () => {
     const navigation = useNavigate()
     return(
-        <header className="menu-container bg-dark">
+        <header className="menu-container bg-gradient">
             <div className="container between main-menu">
                 <div className="img-container logo-menu">
                     <NavLink to="/"><img className="logo" src={logo} alt="" /></NavLink>

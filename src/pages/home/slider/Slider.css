@@ -13,13 +13,13 @@
     height: 410px;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: none;
     transition: display 1s ease-in-out;
 }
 
-/* .slider.active{
+.slider.active{
     display:flex;
-} */
+}
 
 .img-slider{
     position: absolute;
@@ -61,6 +61,7 @@
 }
 
 .round-slider{
+    cursor: pointer;
     background-color: white;
     width: 15px;
     height: 15px;

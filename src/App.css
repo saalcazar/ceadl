@@ -18,6 +18,13 @@
 
 .bg-dark{
     background-color: var(--bg-color-dark);
+}
+
+.bg-light{
+    background-color: var(--bg-color);
+}
+
+.bg-gradient{
     background-image: linear-gradient(to right, white, rgba(58, 109, 136, 1));
 }
 

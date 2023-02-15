@@ -6,6 +6,9 @@ import Home from './pages/home/Home'
 import About from './pages/about/About'
 import 'normalize.css/normalize.css';
 import './index.css'
+import Actions from './pages/actions/Actions'
+import Contact from './pages/contact/Contact'
+import Proyects from './pages/proyects/Proyects'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -13,6 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
           <Route path='quienessomos' element={<About />}/>
+          <Route path='acciones' element={<Actions />}/>
+          <Route path='contacto' element={<Contact />} />
+          <Route path ='proyectos' element={<Proyects />}/>
         </Route>
       </Routes>
     </BrowserRouter>
