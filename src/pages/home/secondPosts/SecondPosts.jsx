@@ -1,6 +1,6 @@
-import imgUno from '../firstPosts/img/violencia.jpg'
-import imgDos from '../firstPosts/img/educacion.jpg'
-import imgTres from '../firstPosts/img/manifestaciones.jpg/'
+import imgUno from '../firstPosts/img/violencia.webp'
+import imgDos from '../firstPosts/img/educacion.webp'
+import imgTres from '../firstPosts/img/manifestaciones.webp'
 import './SecondPosts.css'
 import Card from './card/Card'
 
