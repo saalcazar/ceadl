@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const Slide = (props) => {
     return(
         <>
@@ -12,7 +14,7 @@ const Slide = (props) => {
                         <p className="paragraph-light p-slider">{props.p}</p>
                         <span className="paragraph-light slider-arrow" id="right-arrow">&#10095;</span>
                     </div>
-                    <span className="button-dark read-more"><a className="a-light a-slide" href="">Leer más...</a></span>
+                    <span className="button-dark read-more"><NavLink className="a-light a-slide" to="/posts/primer-post">Leer más...</NavLink></span>
                     <div className="slider-navigation center">
                         <span className={`round-slider ${props.id === 0 ? 'round-active': ''}`}></span>
                         <span className={`round-slider ${props.id === 1 ? 'round-active': ''}`}></span>

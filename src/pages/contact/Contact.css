@@ -1,0 +1,42 @@
+.title-contact{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.direction-container{
+    padding: 1.5rem 0;
+}
+
+.direction{
+    padding: 1.5rem;
+    width: 275px;
+    height: 300px;
+    flex-direction: column;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow);
+    background: white;
+}
+
+.title-direction{
+    margin-bottom: 1.5rem;
+}
+
+.d-item{
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.d-item::before{
+    content: '\276F';
+    margin-right: .5rem;
+    color: var(--bg-color-mid);
+    font-size: 1.2rem;
+}
+
+.map{
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow);
+    width: 470px;
+    height: 440px;
+    overflow: hidden;
+}
