@@ -52,6 +52,10 @@
     color: var(--a-color-light);
 }
 
+.paragraph-mid{
+    color: var(--p-color-op)
+}
+
 .img-container{
     overflow: hidden;
 }

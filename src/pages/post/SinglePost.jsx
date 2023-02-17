@@ -31,15 +31,15 @@ const SinglePost = () => {
                 </div>
             </article>
         </div>
-        <div className="author container center">
+        <div className="author container">
             <div className="img-container img-author center">
                 <img src={author} alt="" />
             </div>
-            <div>
-                <h3>Autor</h3>
-                <p>María de los ángeles</p>
-                <p>Lic. sociología</p>
-                <p>Experta en temas de género</p>
+            <div className='description-author'>
+                <h3 className='author-title paragraph-mid'>Autor</h3>
+                <p className='title-mid p-author'>María de los ángeles</p>
+                <p className='paragraph-mid p-author'>Lic. sociología</p>
+                <p className='paragraph-mid p-author'>Experta en temas de género</p>
             </div>
         </div>
         <div className='comments container center'>

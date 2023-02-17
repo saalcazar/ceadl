@@ -20,6 +20,7 @@
     --a-color-dark: var(--bg-color-mid);
     --a-color-light: var(--bg-color-light);
     --p-color: rgb(33, 25, 21);
+    --p-color-op: rgba(33, 25, 21, .5); 
     --title-dark-color: var(--color-principal);
     --title-light-color: white;
     --card-border-radius: 15px;

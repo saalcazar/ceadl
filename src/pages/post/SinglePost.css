@@ -36,8 +36,22 @@
     margin-top: 1rem;
 }
 
+.author{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.img-author{
+    margin-right: 1rem;
+}
+
 .img-author{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+
+.p-author{
+    margin-top: .5rem;
 }
