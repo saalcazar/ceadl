@@ -1,5 +1,3 @@
-import { animateScroll as scroll } from 'react-scroll';
-
 const Card = ({title, p, img}) => {
     return(
         <div className="card center ">
