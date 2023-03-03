@@ -17,8 +17,7 @@ const Stream = () => {
                 ></iframe>
                 </div>
                 <div>
-                <div class="fb-comments" data-href="https://saalcazar.org" data-numposts="5" data-width=""></div>
-
+                <div class="fb-comments" data-href="https://saalcazar.org" data-width="500" data-numposts="5"></div>
                 </div>
             </div>
         </section>
