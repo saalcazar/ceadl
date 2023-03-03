@@ -3,8 +3,15 @@ import imgDos from '../firstPosts/img/educacion.webp'
 import imgTres from '../firstPosts/img/manifestaciones.webp'
 import './SecondPosts.css'
 import Card from './card/Card'
+import { useEffect } from 'react'
 
 const SecondPosts = () => {
+    useEffect(() => {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+        setTimeout(() => card.classList.add('appear'), index * 100);
+        });
+        }, []);
     return(
         <section className='main-secondposts center bg-dark'>
             <h2 className='title-light'>Política</h2>

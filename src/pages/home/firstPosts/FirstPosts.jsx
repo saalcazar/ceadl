@@ -3,10 +3,16 @@ import imgDos from './img/educacion.webp'
 import imgTres from './img/manifestaciones.webp'
 import "./FirstPosts.css"
 import Card from './card/Card'
-import { animateScroll as scroll } from 'react-scroll';
+import { useEffect } from 'react'
 
 
 const FirstPosts = () => {
+    useEffect(() => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+    setTimeout(() => card.classList.add('appear'), index * 100);
+    });
+    }, []);
     return(
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>

@@ -16,20 +16,28 @@
     overflow: hidden;
     box-shadow: var(--shadow-card);
     flex-direction: column;
+    /**/
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .img-card-first{
     width: 110%;
     transition: width .3s ease;
-}
-
-.a-card {
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .a-card:hover {
-    opacity: 0.8;
-  }  
+} 
 
 .card:hover .img-card-first{
     width: 150%;

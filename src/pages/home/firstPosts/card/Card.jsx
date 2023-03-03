@@ -2,7 +2,7 @@ import { animateScroll as scroll } from 'react-scroll';
 
 const Card = ({title, p, img}) => {
     return(
-        <div className="card center">
+        <div className="card center ">
             <div className='img-container img-card-first'>
                 <img src={img} alt='' />
             </div>
