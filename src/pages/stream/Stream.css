@@ -1,3 +1,26 @@
 .main-stream{
     background-color: var(--color-principal);
+    
+}
+
+.video-stream{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.stream{
+    height: auto;
+}
+
+.streaming{
+    width: 70%;
+}
+
+.list-stream{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.list-stream li{
+    list-style: circle;
 }
