@@ -5,6 +5,7 @@ import instagram from './img/instagram.svg'
 import educo from './img/educo.svg'
 import ministerio from './img/ministerio.svg'
 import './Footer.css'
+import { NavLink } from 'react-router-dom'
 const Footer = () => {
     return(
         <footer className="footer-main">
@@ -30,10 +31,7 @@ const Footer = () => {
                 <div className="footer-two">
                     <h3 className="title-mid title-two">Transparecia</h3>
                     <ul className='footer-list'>
-                        <li><a className='a-light a-footer' href="">Inicio</a></li>
-                        <li><a className='a-light a-footer' href="">Quiénes somos</a></li>
-                        <li><a className='a-light a-footer' href="">Acciones</a></li>
-                        <li><a className='a-light a-footer' href="">Proyectos</a></li>
+                        <li><NavLink className='a-light a-footer' to="/estructura">Estructura</NavLink></li>
                     </ul>
                 </div>
                 <div className="separator"></div>

@@ -11,6 +11,8 @@ import Contact from './pages/contact/Contact'
 import Proyects from './pages/proyects/Proyects'
 import Posts from './pages/posts/Posts'
 import SinglePost from './pages/post/SinglePost'
+import Structure from './pages/structure/Structure'
+import Stream from './pages/stream/Stream'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -21,6 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='acciones' element={<Actions />}/>
           <Route path='contacto' element={<Contact />} />
           <Route path ='proyectos' element={<Proyects />}/>
+          <Route path ='estructura' element={<Structure />}/>
+          <Route path ='stream' element={<Stream />}/>
         </Route>
         <Route path='/posts' element={<App />}>
           <Route index element={<Posts />} />

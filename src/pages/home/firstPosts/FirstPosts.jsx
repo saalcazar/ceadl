@@ -8,11 +8,11 @@ import { useEffect } from 'react'
 
 const FirstPosts = () => {
     useEffect(() => {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach((card, index) => {
-    setTimeout(() => card.classList.add('appear'), index * 100);
-    });
-    }, []);
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+        setTimeout(() => card.classList.add('appear'), index * 100);
+        });
+        }, []);
     return(
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>

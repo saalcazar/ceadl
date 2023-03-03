@@ -68,6 +68,10 @@
     color: var(--a-color-dark)
 }
 
+.a-hover-dark:hover{
+    color: var(--color-dark);
+}
+
 .button-dark{
     background-color: var(--bg-color-mid);
     color: var(--a-color-light);

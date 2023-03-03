@@ -1,6 +1,7 @@
 import enVivo from './img/envivo.webp'
 import streamer from './img/streamer.webp'
 import './AboutStream.css'
+import { NavLink } from 'react-router-dom'
 const AboutStream = () => {
     return(
         <section className="about-stream-main">
@@ -28,7 +29,9 @@ const AboutStream = () => {
                             <p className='paragraph-light p-light'>Experta en temas de genero</p>
                         </article>
                     </div>
-                    <input type="submit" value="Ingresar" className='button-light btn-stream' />
+                    <span className='button-light btn-stream'>
+                        <NavLink to="/stream" className="a-dark a-hover-dark">Ingresar</NavLink>
+                    </span>
                 </div>
             </div>
         </section>

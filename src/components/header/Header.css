@@ -14,7 +14,3 @@
 .nav-menu{
     width: 50%;
 }
-
-.a-light:hover{
-    color: var(--a-color-dark);
-}
