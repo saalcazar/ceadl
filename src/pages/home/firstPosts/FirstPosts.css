@@ -23,6 +23,14 @@
     transition: width .3s ease;
 }
 
+.a-card {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .a-card:hover {
+    opacity: 0.8;
+  }  
+
 .card:hover .img-card-first{
     width: 150%;
 }

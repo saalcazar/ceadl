@@ -1,3 +1,5 @@
+import { animateScroll as scroll } from 'react-scroll';
+
 const Card = ({title, p, img}) => {
     return(
         <div className="card center">
@@ -7,7 +9,7 @@ const Card = ({title, p, img}) => {
             <article className='article-card'>
                 <h4 className='title-card'>{title}</h4>
                 <p className='paragraph p-card'>{p}</p>
-                <a href="" className='a-dark a-card'>Leer más...</a>
+                <a href="" className='a-dark a-card' onClick={() => scroll.scrollToTop()}>Leer más...</a>
             </article>
         </div>
     )
