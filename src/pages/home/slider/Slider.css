@@ -41,9 +41,14 @@
 }
 
 .p-slider{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /*line-clamp: 1;*/
+    overflow: hidden;
     width: 80%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
 }
 
 .slider-arrow{

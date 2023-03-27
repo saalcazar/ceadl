@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
         <Route path='/posts' element={<App />}>
           <Route index element={<Posts />} />
-          <Route path=':primer-post' element={<SinglePost />}/>
+          <Route path=':post' element={<SinglePost />}/>
         </Route>
       </Routes>
     </BrowserRouter>

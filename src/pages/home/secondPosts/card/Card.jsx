@@ -1,4 +1,4 @@
-const Card = ({img, title, p}) => {
+const Card = ({img, title, content}) => {
     return (
         <div className="card">
             <div className="img-card img-container center">
@@ -6,7 +6,7 @@ const Card = ({img, title, p}) => {
             </div>
             <article className='card-article center'>
                 <h4 className='title-light card-title'>{title}</h4>
-                <p className='paragraph-light p-card'>{p}</p>
+                <p className='paragraph-light p-card'>{content}</p>
                 <a href="" className='a-card a-light'>Leer mas...</a>
             </article>
         </div>

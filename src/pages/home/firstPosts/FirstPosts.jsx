@@ -3,10 +3,26 @@ import imgDos from './img/educacion.webp'
 import imgTres from './img/manifestaciones.webp'
 import "./FirstPosts.css"
 import Card from './card/Card'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 
 const FirstPosts = () => {
+
+    const API_URL = import.meta.env.VITE_API_URL
+    const [cards, setCards] = useState([])
+
+    useEffect(() => {
+        fetch(`${API_URL}getAll?l=100&pg=1`)
+        .then((resp) => resp.json())
+        .then((data) => {
+            setCards(data.data.filter(post => post.tags.includes("FirstPost")).slice(-3))
+        })
+        .catch(() => {
+            console.log("La petición fallo")
+        }) 
+    }, [])
+
+
     useEffect(() => {
         const cards = document.querySelectorAll('.card');
         cards.forEach((card, index) => {
@@ -17,23 +33,15 @@ const FirstPosts = () => {
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>
             <div className='between container cards'>
-                <Card
-                    img={imgUno}
-                    title='¿Violencia contra la mujer? Rompamos el ciclo'
-                    p='La violencia contra las mujeres y las niñas es una de las violaciones más generalizadas de los derechos humanos en el mundo.'
-                />
-                <Card 
-                    img={imgDos}
-                    title='¿Violencia contra la mujer?
-                    Rompamos el ciclo'
-                    p='Los niños tienen derecho a la educación. Es uno de los 10 Derechos fundamentales de los niños en la Declaración de los Derechos del Niño en 1959.'
-                />
-                <Card
-                    img={imgTres}
-                    title='¿Violencia contra la mujer?
-                    Rompamos el ciclo'
-                    p='La violencia contra las mujeres y las niñas es una de las violaciones más generalizadas de los derechos humanos en el mundo.'
-                />
+            {
+                cards.slice(-3).map(({img, title, content}) => (
+                    <Card
+                        img={img}
+                        title={title}
+                        content={content}
+                    />
+                ))
+            }
             </div>
         </section>
     )

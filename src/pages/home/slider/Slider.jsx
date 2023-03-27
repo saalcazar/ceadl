@@ -1,55 +1,43 @@
-import imgUno from './img/mujeres.avif'
-import imgDos from './img/violencia.webp'
-import imgTres from './img/lgbt.avif'
 import { useEffect, useState } from 'react'
 import Slide from './slide/Slide'
 import "./Slider.css"
 
-const slide = [
-    {
-        id: 0,
-        img: `${imgUno}`, 
-        title :"Mujer y economía",
-        p:"Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
-    },
-
-    {
-        id: 1,
-        img: `${imgDos}`, 
-        title: "Violencia de género",
-        p: "Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
-    },
-    {
-        id: 2,
-        img: `${imgTres}`, 
-        title: "Por el derecho a la inclución",
-        p: "Las mujeres han estado históricamente subrepresentadas en la economía, ya sea en el empleo o en la propiedad de negocios. Sin embargo, en las últimas décadas, se ha hecho un esfuerzo para aumentar la participación de las mujeres en el mundo laboral y económico."
-    }
-
-]
-
 const Slider = () => {
+
+    const API_URL = import.meta.env.VITE_API_URL
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        fetch(`${API_URL}getAll?l=100&pg=1`)
+        .then((resp) => resp.json())
+        .then((data) => {
+            setPosts(data.data.filter(post => post.tags.includes("Slide")).slice(-3))
+        })
+        .catch(() => {
+            console.log("La petición fallo")
+        }) 
+    }, [])
 
     const [currentSlide, setCurrentSlide] = useState(0)
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setCurrentSlide((currentSlide + 1) % slide.length);
+            setCurrentSlide((currentSlide + 1) % 3);
         }, 5000);
         return () => clearInterval(intervalId);
-    }, [currentSlide, slide.length])
+    }, [currentSlide, posts.length])
 
     return (
         <section className="main-slider">
             <div className="content-slider">
                 {
-                    slide.map(({id, img, title, p}) => (
+                    posts.map(({id, img, title, content}) => (
                         <Slide
                             key={id}
                             id={id}
                             img={img}
                             title={title}
-                            p={p}
+                            content={content}
                             class = 'active'
                         />
                     ))[currentSlide]

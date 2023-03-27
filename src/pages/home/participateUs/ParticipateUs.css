@@ -4,8 +4,10 @@
     background-repeat: repeat;
     background-attachment: fixed;
     position: relative;
-    height: 350px;
+    height: 400px;
     flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .participate-article{

@@ -37,6 +37,7 @@
 
 .img-card-first{
     width: 110%;
+    height: 205px;
     transition: width .3s ease;
 } 
 
@@ -54,5 +55,9 @@
 }
 
 .p-card{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
     margin-bottom: .75rem;
 }
