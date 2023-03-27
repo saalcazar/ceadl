@@ -1,6 +1,3 @@
-import imgUno from './img/violencia.webp'
-import imgDos from './img/educacion.webp'
-import imgTres from './img/manifestaciones.webp'
 import "./FirstPosts.css"
 import Card from './card/Card'
 import { useEffect, useState } from 'react'

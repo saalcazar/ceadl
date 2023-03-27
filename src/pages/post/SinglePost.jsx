@@ -1,4 +1,3 @@
-import mujeres from '../home/slider/img/mujeres.avif'
 import facebook from '../../components/footer/img/facebook.svg'
 import twitter from '../../components/footer/img/twitter.svg'
 import instagram from '../../components/footer/img/instagram.svg'
