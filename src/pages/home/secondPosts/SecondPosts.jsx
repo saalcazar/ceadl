@@ -22,11 +22,11 @@ const SecondPosts = () => {
             <h2 className='title-light'>Política</h2>
             <div className='between container cards'>
             {
-                cards.slice(-3).map(({img, title, content}) => (
+                cards.slice(-3).map(({img, title, excerpt}) => (
                     <Card
                         img={img}
                         title={title}
-                        content={content}
+                        excerpt={excerpt}
                     />
                 ))
             }
