@@ -11,7 +11,7 @@ const SecondPosts = () => {
         fetch(`${API_URL}getAll?l=100&pg=1`)
         .then((resp) => resp.json())
         .then((data) => {
-            setCards(data.data.filter(post => post.tags.includes("SecondPosts")).slice(-3))
+            setCards(data.data.filter(post => post.tags.includes("SecondPost")).slice(-3))
         })
         .catch(() => {
             console.log("La petición fallo")

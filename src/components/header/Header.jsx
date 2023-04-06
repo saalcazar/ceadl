@@ -14,7 +14,7 @@ const Header = () => {
                         <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/acciones">Acciones</NavLink></li>
                         <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/proyectos">Proyectos</NavLink></li>
                         <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/contacto">Contacto</NavLink></li>
-                        <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/posts">Blog</NavLink></li>
+                        {/* <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/posts">Blog</NavLink></li> */}
                     </ul>
                 </nav>
             </div>

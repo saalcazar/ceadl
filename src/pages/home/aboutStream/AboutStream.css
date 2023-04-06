@@ -1,6 +1,6 @@
 .about-stream-main{
     background-image: linear-gradient( to right, var(--bg-color) 50%, var(--bg-color-mid) 50%);
-    height: 580px;
+    height: 610px;
     padding: 1rem;
 }
 
