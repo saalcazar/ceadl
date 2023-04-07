@@ -4,7 +4,7 @@
     background-repeat: repeat;
     background-attachment: fixed;
     position: relative;
-    height: 400px;
+    height: 480px;
     flex-direction: column;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -43,7 +43,7 @@
 
 .p-icon{
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .btn-participate{

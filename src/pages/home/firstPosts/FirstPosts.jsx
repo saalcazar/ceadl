@@ -31,7 +31,7 @@ const FirstPosts = () => {
             <h2 className='title-dark'>Derechos humanos</h2>
             <div className='between container cards'>
             {
-                cards.slice(-3).map(({img, title, excerpt, content}) => (
+                cards.map(({img, title, excerpt, content}) => (
                     <Card
                         img={img}
                         title={title}

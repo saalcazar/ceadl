@@ -8,7 +8,7 @@ const Slider = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        fetch(`${API_URL}getAll?l=3&pg=1`)
+        fetch(`${API_URL}getAll?l=100&pg=1`)
         .then((resp) => resp.json())
         .then((data) => {
             setPosts(data.data.filter(post => post.tags.includes("Slide")).slice(-3))

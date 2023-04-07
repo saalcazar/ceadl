@@ -99,3 +99,11 @@
     height: 85%;
     width: 1px;
 }
+
+.error{
+    color: tomato;
+}
+
+.success{
+    color: greenyellow;
+}
