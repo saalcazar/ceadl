@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const Card = ({title, excerpt, img}) => {
     return(
         <div className="card center ">
@@ -7,7 +9,7 @@ const Card = ({title, excerpt, img}) => {
             <article className='article-card'>
                 <h4 className='title-card'>{title}</h4>
                 <p className='paragraph p-card'>{excerpt}</p>
-                <a href="" className='a-dark a-card' onClick={() => scroll.scrollToTop()}>Leer más...</a>
+                <NavLink className="a-dark a-slide" to={`/posts/${title}`}>Leer más...</NavLink>
             </article>
         </div>
     )

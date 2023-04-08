@@ -26,10 +26,10 @@ const SinglePost = () => {
 
     return(
         <>
-        <div className="img-container img-post center">
-            <img src={post.img} alt="" />
-        </div>
-        <div className="container center">
+        <div className="container">
+            <div className="img-container img-post">
+                <img src={post.img} alt="" />
+            </div>
             <article className='article-post'>
                 <h1 className='title-dark title-post'>{params.post}</h1>
                 <div className='meta-post between'>

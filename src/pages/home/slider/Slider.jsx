@@ -11,7 +11,7 @@ const Slider = () => {
         fetch(`${API_URL}getAll?l=100&pg=1`)
         .then((resp) => resp.json())
         .then((data) => {
-            setPosts(data.data.filter(post => post.tags.includes("Slide")).slice(-3))
+            setPosts(data.data.filter(post => post.tags.includes("Slide")).slice(-3).reverse())
         })
         .catch(() => {
             console.log("La petición fallo")
@@ -38,9 +38,9 @@ const Slider = () => {
                             img={img}
                             title={title}
                             content={content}
-                            class = 'active'
+                            class='active'
                         />
-                    ))[currentSlide]
+                    )).reverse()[currentSlide]
                 }
             </div>
         </section>

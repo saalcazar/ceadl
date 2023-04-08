@@ -12,7 +12,7 @@ const FirstPosts = () => {
         fetch(`${API_URL}getAll?l=100&pg=1`)
         .then((resp) => resp.json())
         .then((data) => {
-            setCards(data.data.filter(post => post.tags.includes("FirstPost")).slice(-3))
+            setCards(data.data.filter(post => post.tags.includes("FirstPost")).slice(-3).reverse())
         })
         .catch(() => {
             console.log("La petición fallo")
@@ -20,12 +20,12 @@ const FirstPosts = () => {
     }, [])
 
 
-    useEffect(() => {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach((card, index) => {
-        setTimeout(() => card.classList.add('appear'), index * 100);
-        });
-        }, []);
+    // useEffect(() => {
+    //     const cards = document.querySelectorAll('.card');
+    //     cards.forEach((card, index) => {
+    //     setTimeout(() => card.classList.add('appear'), index * 100);
+    //     });
+    //     }, []);
     return(
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>
