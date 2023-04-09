@@ -11,7 +11,7 @@ const Slide = (props) => {
                     <h2 className="title-light title-slider">{props.title}</h2>
                     <div className="contrast between">
                         <span className="paragraph-light slider-arrow" id="left-arrow">&#10094;</span>
-                        <p className="paragraph-light p-slider">{props.content}</p>
+                        <p className="paragraph-light p-slider">{props.excerpt}</p>
                         <span className="paragraph-light slider-arrow" id="right-arrow">&#10095;</span>
                     </div>
                     <span className="button-dark read-more"><NavLink className="a-light a-slide" to={`/posts/${props.title}`}>Leer más...</NavLink></span>

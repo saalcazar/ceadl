@@ -10,7 +10,7 @@ const ParticipateUs = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('http://localhost:8080/v1/mail', {
+    fetch('https://backend-ceadl-production.up.railway.app/v1/mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

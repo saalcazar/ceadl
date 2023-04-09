@@ -31,13 +31,13 @@ const Slider = () => {
         <section className="main-slider">
             <div className="content-slider">
                 {
-                    posts.map(({id, img, title, content}) => (
+                    posts.map(({id, img, title, excerpt}) => (
                         <Slide
                             key={id}
                             id={id}
                             img={img}
                             title={title}
-                            content={content}
+                            excerpt={excerpt}
                             class='active'
                         />
                     )).reverse()[currentSlide]
