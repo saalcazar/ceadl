@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 const Slide = (props) => {
     return(
         <>
-            <div key={props.id} className={`slider ${props.class}`}>
+            <div key={props.id} className={`slider blur-in ${props.class}`}>
                 <div className='img-slider img-container center'>
                     <img src={props.img} alt={props.img} />
                 </div>
