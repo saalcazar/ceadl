@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-const Card = ({title, excerpt, img}) => {
+const Card = ({id, title, excerpt, img}) => {
     return(
         <div className="card center ">
             <div className='img-container img-card-first'>

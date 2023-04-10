@@ -3,23 +3,16 @@ import { NavLink } from "react-router-dom"
 const Slide = (props) => {
     return(
         <>
-            <div key={props.id} className={`slider blur-in ${props.class}`}>
+            <div key={props.id} className={`slider ${props.class}`}>
                 <div className='img-slider img-container center'>
                     <img src={props.img} alt={props.img} />
                 </div>
                 <article className="container article-slide center">
                     <h2 className="title-light title-slider">{props.title}</h2>
-                    <div className="contrast between">
-                        <span className="paragraph-light slider-arrow" id="left-arrow">&#10094;</span>
+                    <div className="contrast center">
                         <p className="paragraph-light p-slider">{props.excerpt}</p>
-                        <span className="paragraph-light slider-arrow" id="right-arrow">&#10095;</span>
                     </div>
                     <span className="button-dark read-more"><NavLink className="a-light a-slide" to={`/posts/${props.title}`}>Leer más...</NavLink></span>
-                    <div className="slider-navigation center">
-                        <span className={`round-slider ${props.id === 0 ? 'round-active': ''}`}></span>
-                        <span className={`round-slider ${props.id === 1 ? 'round-active': ''}`}></span>
-                        <span className={`round-slider ${props.id === 2 ? 'round-active': ''}`}></span>
-                    </div>
                 </article>
             </div>
         </>

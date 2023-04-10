@@ -41,7 +41,11 @@
 }
 
 .title-mid{
-    color :var(--bg-color-mid);
+    color: var(--bg-color-mid);
+}
+
+.title-load{
+    color: rgb(163, 163, 163)
 }
 
 .paragraph{
@@ -119,7 +123,8 @@
 }
 
 .blur-in{
-    animation:blur-in 0.4s linear both
+    animation:blur-in 0.4s linear;
+    animation-delay: 3s;
 }
 
 @keyframes blur-in{
@@ -128,7 +133,8 @@
 }
 
 .rotate-vertical-center{
-    animation:rotate-vertical-center 1s
+    animation:rotate-vertical-center 6s;
+    animation-delay: 3s;
 }
 
 @keyframes rotate-vertical-center{
