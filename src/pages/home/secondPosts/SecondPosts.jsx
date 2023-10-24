@@ -4,7 +4,7 @@ import Card from './card/Card'
 
 const SecondPosts = () => {
 
-    const [cards] = usePetition(`getAll?l=100&pg=1`, "SecondPost", [])
+    const [cards] = usePetition(`posts/getAll?l=100&pg=1`, "SecondPost", [])
 
     return(
         <section className='main-secondposts center bg-dark'>

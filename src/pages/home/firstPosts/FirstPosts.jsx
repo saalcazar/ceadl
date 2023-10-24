@@ -4,15 +4,16 @@ import Card from './card/Card'
 
 const FirstPosts = () => {
 
-    const [cards] = usePetition(`getAll?l=100&pg=1`, "SecondPost", [])
+    const [cards] = usePetition(`posts/getAll?l=100&pg=1`, "FirstPost", [])
 
     return(
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>
             <div className='between container cards'>
             {
-                cards.map(({img, title, excerpt}) => (
+                cards.map(({id, img, title, excerpt}) => (
                     <Card
+                        key = {id}
                         img = {img}
                         title = {title}
                         excerpt = {excerpt}

@@ -17,7 +17,6 @@
     box-shadow: var(--shadow-card);
     flex-direction: column;
     padding-bottom: 5px;
-    /**/
     opacity: 0;
     animation-name: appear;
     animation-duration: 1s;
@@ -37,13 +36,13 @@
 }
 
 .img-card-first{
-    width: 110%;
+    width: 150%;
     height: 205px;
     transition: width .3s ease;
 } 
 
 .card:hover .img-card-first{
-    width: 150%;
+    width: 170%;
 }
 
 .article-card{

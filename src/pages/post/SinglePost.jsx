@@ -5,6 +5,7 @@ import author from '../home/aboutStream/img/streamer.webp'
 import './SinglePost.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Comments from '../../components/comments/Comments'
 
 const SinglePost = () => {
 
@@ -14,7 +15,7 @@ const SinglePost = () => {
     const [post, setPost] = useState({})
 
     useEffect(() => {
-        fetch(`${API_URL}getByTitle?title=${params.post}`)
+        fetch(`${API_URL}posts/getByTitle?title=${params.post}`)
         .then((resp) => resp.json())
         .then((data) => {
             setPost(data.data)
@@ -38,7 +39,7 @@ const SinglePost = () => {
                         <img src={twitter} alt="" className='icon-post' />
                         <img src={instagram} alt="" className='icon-post' />
                     </div>
-                    <p className='paragraph'>Publicado el: <span className='title-mid'>30 de enero de 2022</span></p>
+                    <p className='paragraph'>Publicado el: <span className='title-mid'>{Date(post.date)}</span></p>
                 </div>
                 <div className="content-post" dangerouslySetInnerHTML={{__html: post.content}}>
                     
@@ -57,7 +58,9 @@ const SinglePost = () => {
             </div>
         </div>
         <div className='comments container center'>
-            <h3 className='title-light'>Deja tu comentario</h3>
+            <Comments
+                id = {post.id}
+            />
         </div>
         </>
     )

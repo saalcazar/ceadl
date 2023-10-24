@@ -5,7 +5,7 @@ import usePetition from '../../../hooks/usePetition'
 
 const Slider = () => {
 
-    const [slider, loading] = usePetition(`getAll?l=100&pg=1`, "Slide")
+    const [slider, loading] = usePetition(`posts/getAll?l=100&pg=1`, "Slide")
     const [currentSlide, setCurrentSlide] = useState(0)
 
     useEffect(() => {

@@ -30,4 +30,5 @@
 
 .card-article:hover{
     opacity: 1;
+    backdrop-filter: blur(5px);
 }

@@ -1,0 +1,73 @@
+.main-social {
+  padding: 1rem 0;
+  background-color: var(--color-dark);
+}
+
+.socialList {
+  position: relative;
+  display: flex;
+  transform-style: preserve-3d;
+  
+}
+
+.socialItem {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 25px;
+}
+
+.socialItem span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--clr);
+  transition: 0.2s;
+}
+
+.socialItem:hover span {
+  z-index: 10;
+  transition: .5s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+  background: var(--clr);
+}
+
+.socialItem:hover span:nth-child(5) {
+  transform: translate(14px, -14px);
+}
+
+.socialItem:hover span:nth-child(4) {
+  transform: translate(11px, -11px);
+  opacity: .8;
+}
+
+.socialItem:hover span:nth-child(3) {
+  transform: translate(8px, -8px);
+  opacity: .6;
+}
+
+.socialItem:hover span:nth-child(2) {
+  transform: translate(5px, -5px);
+  opacity: .4;
+}
+
+.socialItem:hover span:nth-child(1) {
+  opacity: .2;
+}
+
+.socialItem span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialImg {
+  width: 60%;
+}

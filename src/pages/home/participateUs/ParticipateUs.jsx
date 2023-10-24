@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './ParticipateUs.css';
 
 const ParticipateUs = () => {
+  const API_URL = import.meta.env.VITE_API_URL
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState(null);
@@ -10,7 +11,7 @@ const ParticipateUs = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('https://backend-ceadl-production.up.railway.app/v1/mail', {
+    fetch(`${API_URL}mail`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
