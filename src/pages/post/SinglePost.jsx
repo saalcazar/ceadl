@@ -49,7 +49,7 @@ const SinglePost = () => {
                 </div>
             </article>
         </div>
-        <div className="author container">
+        {/* <div className="author container">
             <div className="img-container img-author center">
                 <img src={employe.img} alt="" />
             </div>
@@ -64,7 +64,7 @@ const SinglePost = () => {
             <Comments
                 id = {post.id}
             />
-        </div>
+        </div> */}
         </>
     )
 }
