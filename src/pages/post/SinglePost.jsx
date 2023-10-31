@@ -59,12 +59,12 @@ const SinglePost = () => {
                 <p className='paragraph-mid p-author'>{employe.proffesion}</p>
                 <p className='paragraph-mid p-author'>{employe.experience}</p>
             </div>
-        </div>
+    </div> */}
         <div className='comments container center'>
             <Comments
                 id = {post.id}
             />
-        </div> */}
+        </div>
         </>
     )
 }
