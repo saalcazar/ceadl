@@ -10,7 +10,6 @@ const usePetition = (endPoint, tag, string) => {
         fetch(`${API_URL}${endPoint}`)
         .then(resp => resp.json())
         .then(data => {
-          console.log(data)
           setPosts(data.data.filter(post => post.tags.includes(tag)).slice(-3).reverse())
             setLoading(false)
         })

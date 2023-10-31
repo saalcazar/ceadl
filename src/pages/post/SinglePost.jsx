@@ -1,11 +1,11 @@
 import facebook from '../../components/footer/img/facebook.svg'
 import twitter from '../../components/footer/img/twitter.svg'
 import instagram from '../../components/footer/img/instagram.svg'
-import author from '../home/aboutStream/img/streamer.webp'
 import './SinglePost.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Comments from '../../components/comments/Comments'
+import useEmploy from '../../hooks/useEmploy'
 
 const SinglePost = () => {
 
@@ -13,18 +13,21 @@ const SinglePost = () => {
 
     const API_URL = import.meta.env.VITE_API_URL
     const [post, setPost] = useState({})
+    const [employ, setEmploy] = useState('ceadl')
 
     useEffect(() => {
         fetch(`${API_URL}posts/getByTitle?title=${params.post}`)
         .then((resp) => resp.json())
         .then((data) => {
             setPost(data.data)
+            setEmploy(data.data.author)
         })
         .catch(() => {
             console.log("La petición fallo")
         }) 
     }, [])
 
+    const employe = useEmploy(employ)
     return(
         <>
         <div className="container">
@@ -48,13 +51,13 @@ const SinglePost = () => {
         </div>
         <div className="author container">
             <div className="img-container img-author center">
-                <img src={author} alt="" />
+                <img src={employe.img} alt="" />
             </div>
             <div className='description-author'>
                 <h3 className='author-title paragraph-mid'>Autor</h3>
-                <p className='title-mid p-author'>María de los ángeles</p>
-                <p className='paragraph-mid p-author'>Lic. sociología</p>
-                <p className='paragraph-mid p-author'>Experta en temas de género</p>
+                <p className='title-mid p-author'>{employe.name}</p>
+                <p className='paragraph-mid p-author'>{employe.proffesion}</p>
+                <p className='paragraph-mid p-author'>{employe.experience}</p>
             </div>
         </div>
         <div className='comments container center'>

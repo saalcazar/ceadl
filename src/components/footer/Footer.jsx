@@ -2,7 +2,7 @@ import facebook from './img/facebook.svg'
 import twitter from './img/twitter.svg'
 import youtube from './img/youtube.svg'
 import instagram from './img/instagram.svg'
-import educo from './img/educo.svg'
+import tdh from './img/tdh_logo_black.svg'
 import ministerio from './img/ministerio.svg'
 import './Footer.css'
 import { NavLink } from 'react-router-dom'
@@ -21,10 +21,10 @@ const Footer = () => {
                         <p className="paragraph-light">direccion@ceadl.org.bo</p>
                     </div>
                     <div className='social between'>
-                        <img src={facebook} alt="" className='social-footer'/>
-                        <img src={twitter} alt="" className='social-footer'/>
-                        <img src={youtube} alt="" className='social-footer'/>
-                        <img src={instagram} alt="" className='social-footer'/>
+                        <a href=""><img src={facebook} alt="" className='social-footer'/></a>
+                        <a href=""><img src={twitter} alt="" className='social-footer'/></a>
+                        <a href=""><img src={youtube} alt="" className='social-footer'/></a>
+                        <a href=""><img src={instagram} alt="" className='social-footer'/></a>
                     </div>
                 </div>
                 <div className="separator"></div>
@@ -41,7 +41,7 @@ const Footer = () => {
                         <img src={ministerio} alt="" />
                     </div>
                     <div className="logo-dos">
-                        <img src={educo} alt="" />
+                        <img src={tdh} alt="" />
                     </div>
                 </div>
             </div>

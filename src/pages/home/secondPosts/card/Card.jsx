@@ -9,7 +9,7 @@ const Card = ({id, img, title, excerpt}) => {
             <article className='card-article center'>
                 <h4 className='title-light card-title'>{title}</h4>
                 <p className='paragraph-light p-card'>{excerpt}</p>
-                <NavLink className="a-light a-slide" to={`/posts/${title}`}>Leer más...</NavLink>
+                <NavLink className="a-light a-secondpost" to={`/posts/${title}`}>Leer más...</NavLink>
             </article>
         </div>
     )

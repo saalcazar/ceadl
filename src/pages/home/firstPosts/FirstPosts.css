@@ -36,13 +36,13 @@
 }
 
 .img-card-first{
-    width: 150%;
+    width: 175%;
     height: 205px;
     transition: width .3s ease;
 } 
 
 .card:hover .img-card-first{
-    width: 170%;
+    width: 190%;
 }
 
 .article-card{

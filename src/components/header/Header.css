@@ -14,3 +14,11 @@
 .nav-menu{
     width: 50%;
 }
+
+.menu-item {
+    transition: padding-bottom .3s;
+}
+
+.menu-item:hover {
+    padding-bottom: 10px;
+}

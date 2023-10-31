@@ -10,7 +10,7 @@
 }
 
 .img-card-article{
-    width: 215%;
+    width: 350%
 }
 
 .card-article{
@@ -31,4 +31,10 @@
 .card-article:hover{
     opacity: 1;
     backdrop-filter: blur(5px);
+}
+
+.a-secondpost {
+    background-color: var(--bg-color-dark);
+    padding: .5rem;
+    border-radius: 5px;
 }

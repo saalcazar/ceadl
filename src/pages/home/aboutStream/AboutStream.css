@@ -25,7 +25,6 @@
 }
 
 .img-stream{
-    height: 200px;
     border-radius: var(--card-border-radius);
     margin-bottom: 1rem;
 }

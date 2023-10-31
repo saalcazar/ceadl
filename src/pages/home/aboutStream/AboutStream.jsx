@@ -12,26 +12,14 @@ const AboutStream = () => {
                 </div>
                 <div className="stream center">
                     <div className='top-stream center'>
-                        <h2 className="title-light title-top">EN VIVO</h2>
+                        <h2 className="title-light title-top">Producción</h2>
                         <div className="img-container img-stream">
-                            <img src={enVivo} alt="" />
+                            <iframe src="https://www.youtube.com/embed/3kuZ-mOEku4?si=0J9UX4PbzY-yUCjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/52PPYIKhLyY?si=gLNMJbvxIZRiRlcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/GqAYS_t6IKA?si=qUY3E_hjMSxfb1Dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <p className='paragraph-light'>Hoy el curso de “Prevención y denuncia de la violencia intra familiar”</p>
                     </div>
-                    <div className="bot-stream between">
-                        <div className="img-container img-bot">
-                            <img src={streamer} alt="" />
-                        </div>
-                        <article className='article-bot'>
-                            <h3 className='paragraph-light title-bot'>Expone</h3>
-                            <p className='paragraph-light'>Maria de los Ángeles</p>
-                            <p className='paragraph-light p-light'>Lic. en sociología</p>
-                            <p className='paragraph-light p-light'>Experta en temas de genero</p>
-                        </article>
-                    </div>
-                    <span className='button-light btn-stream'>
-                        <NavLink to="/stream" className="a-dark a-hover-dark">Ingresar</NavLink>
-                    </span>
+                    
                 </div>
             </div>
         </section>

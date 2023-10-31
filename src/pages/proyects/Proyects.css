@@ -1,0 +1,22 @@
+.title-proyect{
+  padding: 1rem 0;
+}
+
+.project {
+  padding: 1rem;
+}
+
+.article-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.title-project-description {
+  margin-bottom: 1rem;
+}
+
+.img-project-container {
+  width: 100%;
+}
