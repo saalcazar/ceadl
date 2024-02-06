@@ -3,7 +3,7 @@
 }
 
 .footer{
-    height: 300px;
+    height: auto;
 }
 
 .footer-one, .footer-two, .footer-three{
@@ -28,9 +28,14 @@
 
 .social{
     margin-top: .75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
 }
 
 .social-footer{
+    opacity: .6;
+    width: 50%;
     margin-top: .5rem;
     margin-right: 1rem;
 }
@@ -60,7 +65,11 @@
     margin-bottom: 1.5rem;
 }
 
-.logo-uno{
-    background-color: yellow;
+.p-copi {
+    font-size: .8rem;
 }
+
+/* .logo-uno{
+    background-color: yellow;
+} */
 

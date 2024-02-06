@@ -8,17 +8,18 @@
 }
 
 .social-post{
-    background-color: var(--bg-color-mid);
+    background-color: rgba(0, 0, 0, .7);
     padding: .4rem;
     width: 150px;
     display: flex;
     justify-content: space-around;
-    border-radius: var(--btn-border-radius);
+    border-radius: 15px;
     margin-bottom: .5rem;
 }
 
 .icon-post{
-    width: 30px;
+    opacity: .7;
+    width: 25px;
 }
 
 .comments{

@@ -5,7 +5,6 @@ import './SinglePost.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Comments from '../../components/comments/Comments'
-import useEmploy from '../../hooks/useEmploy'
 
 const SinglePost = () => {
 
@@ -14,6 +13,7 @@ const SinglePost = () => {
     const API_URL = import.meta.env.VITE_API_URL
     const [post, setPost] = useState({})
     const [employ, setEmploy] = useState('ceadl')
+    const [paragraphs, setParagraphs] = useState([])
 
     useEffect(() => {
         fetch(`${API_URL}posts/getByTitle?title=${params.post}`)
@@ -21,13 +21,13 @@ const SinglePost = () => {
         .then((data) => {
             setPost(data.data)
             setEmploy(data.data.author)
+            setParagraphs(data.data.content.split('\n\n'))
         })
         .catch(() => {
             console.log("La petición fallo")
         }) 
     }, [])
 
-    const employe = useEmploy(employ)
     return(
         <>
         <div className="container">
@@ -38,28 +38,32 @@ const SinglePost = () => {
                 <h1 className='title-dark title-post'>{params.post}</h1>
                 <div className='meta-post between'>
                     <div className='social-post center'>
-                        <img src={facebook} alt="" className='icon-post' />
-                        <img src={twitter} alt="" className='icon-post' />
-                        <img src={instagram} alt="" className='icon-post' />
+                        <a href=""><img src={facebook} alt="" className='icon-post' /></a>
+                        <a href=""><img src={twitter} alt="" className='icon-post' /></a>
+                        <a href=""><img src={instagram} alt="" className='icon-post' /></a>
                     </div>
                     <p className='paragraph'>Publicado el: <span className='title-mid'>{Date(post.date)}</span></p>
                 </div>
-                <div className="content-post" dangerouslySetInnerHTML={{__html: post.content}}>
-                    
+                <div className="content-post">
+                    {
+                        paragraphs.map((paragraph, index) => (
+                            <p className="p-article" key={index}>{paragraph}</p>
+                        ))
+                    }
                 </div>
             </article>
         </div>
         {/* <div className="author container">
             <div className="img-container img-author center">
-                <img src={employe.img} alt="" />
+                <img src={user.img} alt="" />
             </div>
             <div className='description-author'>
                 <h3 className='author-title paragraph-mid'>Autor</h3>
-                <p className='title-mid p-author'>{employe.name}</p>
-                <p className='paragraph-mid p-author'>{employe.proffesion}</p>
-                <p className='paragraph-mid p-author'>{employe.experience}</p>
+                <p className='title-mid p-author'>{user.name}</p>
+                <p className='paragraph-mid p-author'>{user.proffesion}</p>
+                <p className='paragraph-mid p-author'>{user.experience}</p>
             </div>
-    </div> */}
+        </div> */}
         <div className='comments container center'>
             <Comments
                 id = {post.id}
