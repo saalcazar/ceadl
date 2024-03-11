@@ -14,7 +14,7 @@ const Contact = () => {
                     <h3 className="title-dark title-direction">El Alto</h3>
                     <ul>
                         <li className='d-item'>Calle José Ballivian, Av. Julio Cesar Valdez, zona Villa Bolívar C</li>
-                        <li className='d-item'>(+591) 2 2829525</li>
+                        <li className='d-item'>(+591) 2 2830305</li>
                         <li className='d-item'>direccion@ceadl.org.bo</li>
                     </ul>
                 </article>
@@ -40,7 +40,7 @@ const Contact = () => {
                     <h3 className="title-dark title-direction">La Paz</h3>
                     <ul>
                         <li className='d-item'>Calle Pasoskanqui Nro 1529, Av. Brasil, zona Miraflores, Edificio Killa</li>
-                        <li className='d-item'>(+591) 2 2829525</li>
+                        <li className='d-item'>(+591) 2 2830305</li>
                         <li className='d-item'>direccion@ceadl.org.bo</li>
                     </ul>
                 </article>

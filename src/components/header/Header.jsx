@@ -11,7 +11,7 @@ const Header = () => {
                 <nav className="nav-menu">
                     <ul className="menu between">
                         <li className="menu-item blur-in"><NavLink className='a-light a-hover-dark' to="/quienessomos">Quienes somos</NavLink></li>
-                        <li className="menu-item blur-in"><NavLink className='a-light a-hover-dark' to="/acciones">Acciones</NavLink></li>
+                        <li className="menu-item blur-in"><NavLink className='a-light a-hover-dark' to="/acciones">Líneas estratégicas</NavLink></li>
                         <li className="menu-item blur-in"><NavLink className='a-light a-hover-dark' to="/proyectos">Proyectos</NavLink></li>
                         <li className="menu-item blur-in"><NavLink className='a-light a-hover-dark' to="/contacto">Contacto</NavLink></li>
                         <li className="menu-item"><NavLink className='a-light a-hover-dark' to="/posts">Blog</NavLink></li>

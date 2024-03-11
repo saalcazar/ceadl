@@ -14,7 +14,7 @@ const Footer = () => {
                         <p className="paragraph-light p-address">El Alto:</p>
                         <p className="paragraph-light p-address">Calle José Ballivian, Av. Julio Cesar Valdez, zona Villa Bolívar C</p>
                         <p className="paragraph-light p-address">Teléfono:</p>
-                        <p className="paragraph-light p-address">(+591) 2 2829525</p>
+                        <p className="paragraph-light p-address">(+591) 2 2830305</p>
                         <p className="paragraph-light p-address">Correo electrónico:</p>
                         <p className="paragraph-light">direccion@ceadl.org.bo</p>
                     </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div className="separator"></div>
                 <div className="footer-three">
-                    <h3 className="title-mid title-three">Financiadores</h3>
+                    <h3 className="title-mid title-three">Socios estratégicos</h3>
                     <div className="logo-uno img-container">
                         <img src='https://www.educo.org/Content/images/logo_educarcura.svg' alt="" />
                     </div>
