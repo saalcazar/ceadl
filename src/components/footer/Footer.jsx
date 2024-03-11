@@ -1,9 +1,8 @@
 import facebook from './img/facebook.svg'
 import twitter from './img/twitter.svg'
 import youtube from './img/youtube.svg'
-import tdh from './img/tdh_logo_black.svg'
+import tdh from './img/tdh-Suisse.jpg'
 import './Footer.css'
-import { NavLink } from 'react-router-dom'
 const Footer = () => {
     return(
         <footer className="footer-main">

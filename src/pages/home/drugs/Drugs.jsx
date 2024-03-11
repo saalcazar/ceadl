@@ -2,7 +2,7 @@ import usePetition from "../../../hooks/usePetition"
 import "./Drugs.css"
 import Card from './card/Card'
 
-const FirstPosts = () => {
+const Drugs = () => {
 
     const [cards] = usePetition(`posts/getAll?l=100&pg=1`, "DrugsPost", [])
 
@@ -25,4 +25,4 @@ const FirstPosts = () => {
     )
 }
 
-export default FirstPosts
+export default Drugs
