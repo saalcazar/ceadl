@@ -15,7 +15,7 @@ const Footer = () => {
                         <p className="paragraph-light p-address">Teléfono:</p>
                         <p className="paragraph-light p-address">(+591) 2 2830305</p>
                         <p className="paragraph-light p-address">Correo electrónico:</p>
-                        <p className="paragraph-light">direccion@ceadl.org.bo</p>
+                        <p className="paragraph-light">ceadl@ceadl.org.bo</p>
                     </div>
                     <div className='social'>
                         <a href="https://www.facebook.com/ceadl" target='_blank'><img src={facebook} alt="" className='social-footer'/></a>

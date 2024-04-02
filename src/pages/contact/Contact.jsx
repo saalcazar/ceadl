@@ -15,7 +15,7 @@ const Contact = () => {
                     <ul>
                         <li className='d-item'>Calle José Ballivian, Av. Julio Cesar Valdez, zona Villa Bolívar C</li>
                         <li className='d-item'>(+591) 2 2830305</li>
-                        <li className='d-item'>direccion@ceadl.org.bo</li>
+                        <li className='d-item'>ceadl@ceadl.org.bo</li>
                     </ul>
                 </article>
                 <div className="map" dangerouslySetInnerHTML={{ __html: mapElAlto }}></div>
@@ -29,7 +29,7 @@ const Contact = () => {
                     <ul>
                         <li className='d-item'>Calle Junín Nro 407 esq. Hernando Silez, zona Central</li>
                         <li className='d-item'>(+591) 4 6458270</li>
-                        <li className='d-item'>direccion@ceadl.org.bo</li>
+                        <li className='d-item'>ceadl@ceadl.org.bo</li>
                     </ul>
                 </article>
             </div>
