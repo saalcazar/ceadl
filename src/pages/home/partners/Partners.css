@@ -1,0 +1,28 @@
+.main-partners {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.logos {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .7rem;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-partner {
+  filter: grayscale();
+  transition: filter .5s ease;
+}
+
+.logo-partner:hover {
+  filter: grayscale(0);
+}

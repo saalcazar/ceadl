@@ -5,6 +5,7 @@ import SecondPosts from './secondPosts/SecondPosts'
 import Slider from './slider/Slider'
 import SocialNetwork from './socialNetwork/SocialNetwork'
 import Drugs from './drugs/Drugs'
+import Partners from './partners/Partners'
 const Home = () => {
     return(
         <>
@@ -15,6 +16,7 @@ const Home = () => {
             <ParticipateUs />
             <SecondPosts />
             <AboutStream />
+            <Partners />
         </>
     )
 }

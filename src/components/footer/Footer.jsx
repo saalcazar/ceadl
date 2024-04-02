@@ -29,18 +29,6 @@ const Footer = () => {
                     <div class="fb-page" data-href="https://www.facebook.com/ceadl" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ceadl" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ceadl">CEADL Bolivia</a></blockquote></div>
                 </div>
                 <div className="separator"></div>
-                <div className="footer-three">
-                    <h3 className="title-mid title-three">Socios estratégicos</h3>
-                    <div className="logo-uno img-container">
-                        <img src='https://www.educo.org/Content/images/logo_educarcura.svg' alt="" />
-                    </div>
-                    <div className="logo-uno img-container">
-                        <img src='https://es.mmf.li/wp-content/uploads/2015/06/img_logo.png' alt="" />
-                    </div>
-                    <div className="logo-dos">
-                        <img src={tdh} alt="" />
-                    </div>
-                </div>
             </div>
             <div className='ddrr center'>
                 <p className='paragraph-light p-copi'>Todos los derechos reservados 2022 CEADL - Diseñado por <a href="https://saalcazar.org" target='_blank' className='a-dark p-copi'>saalcazar</a></p>
