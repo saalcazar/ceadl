@@ -7,7 +7,7 @@ const SecondPosts = () => {
     const [cards] = usePetition(`posts/getAll?l=100&pg=1`, "SecondPost", [])
 
     return(
-        <section className='main-secondposts center bg-dark'>
+        <section className='main-secondposts center'>
             <h2 className='title-light'>Política</h2>
             <div className='between container cards'>
             {

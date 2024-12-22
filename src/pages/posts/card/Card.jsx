@@ -6,11 +6,13 @@ const Card = ({i, title, excerpt, img}) => {
       <div className="img-container img-card-posts">
         <img className="img-posts" src={img} alt="" />
       </div>
-      <div className="content-card-posts">
-        <h4 className="title-light title-post">{title}</h4>
-        <p className="paragraph-light p-posts">{excerpt}</p>
-        <NavLink className="a-dark a-posts" to={`/posts/${title}`}>Leer más</NavLink>
-      </div>
+      <NavLink to={`/posts/${title}`}>
+        <div className="content-card-posts">
+          <h4 className="title-dark title-post">{title}</h4>
+          <p className="paragraph p-posts">{excerpt}</p>
+          <p className="a-light a-posts">Leer más</p>
+        </div>
+      </NavLink>
     </article>
   )
 }

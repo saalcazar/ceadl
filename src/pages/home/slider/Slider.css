@@ -2,6 +2,12 @@
     overflow: hidden;
 }
 
+@media (width < 770px) {
+    .main-slider {
+        display: none;
+    }
+}
+
 .content-slider{
     width: 100%;
     display: flex;
@@ -16,10 +22,19 @@
 .slider-arrows {
     position: absolute;
     color: white;
+    margin-top: 1rem;
 }
 
 .arrow-left {
     left: 0;
+}
+
+.arrow-left:hover {
+    color: var(--color-principal);
+}
+
+.arrow-right:hover {
+    color: var(--color-principal);
 }
 
 .slider{
@@ -59,6 +74,10 @@
 }
 
 .title-slider{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     margin-bottom: 1rem;
 }
 

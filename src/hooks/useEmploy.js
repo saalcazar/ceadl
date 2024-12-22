@@ -9,13 +9,13 @@ const employs = {
     experience: 'ONG',
     img: log
   },
-  Samuel: {
+  samuel: {
     name: 'Samuel Alcazar',
     proffesion: 'Ing. Sistemas',
     experience: 'Experto en Fullstack',
     img: imgSamuel
   },
-  Joel: {
+  joel: {
     name: 'Joel Ibarra',
     proffesion: 'Lic. Antropología',
     experience: 'Educador',
@@ -24,7 +24,11 @@ const employs = {
 }
 
 const useEmploy = (nameEmploy) => {
-  const user = employs[nameEmploy]
+  const user = employs[nameEmploy.toLowerCase()]
+  if (!user) {
+    const user = employs.ceadl
+    return user
+  }
   return user
 }
 

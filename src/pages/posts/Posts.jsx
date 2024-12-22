@@ -31,6 +31,8 @@ const Posts = ()=> {
               title={card.title}
               excerpt={card.excerpt}
               img={card.img}
+              date={card.date}
+              author={card.author}
             />
           )
         }

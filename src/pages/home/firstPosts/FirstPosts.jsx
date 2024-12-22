@@ -9,7 +9,7 @@ const FirstPosts = () => {
     return(
         <section className='main-firstPost center'>
             <h2 className='title-dark'>Derechos humanos</h2>
-            <div className='between container cards'>
+            <div className='cards'>
             {
                 cards.map(({id, img, title, excerpt}) => (
                     <Card

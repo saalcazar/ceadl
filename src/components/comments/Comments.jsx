@@ -59,6 +59,7 @@ const Comments = ({id}) => {
         content: '',
         idPost: 0
       });
+      window.location.reload()
     })
     .catch(error => console.log('Error: ', error))
     

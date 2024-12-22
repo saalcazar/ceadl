@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const AboutStream = () => {
     return(
         <section className="about-stream-main">
-            <div className="container between">
+            <div className="container between about-stream">
                 <div className="about center">
                     <h2 className='title-dark about-title'>¿Quiénes somos?</h2>
                     <p className='paragraph about-p'>En la actualidad el CEADL es una creación colectiva de organizaciones de jóvenes y profesionales interesados en posicionar los Derechos Humanos y Derechos Ambientales a partir de procesos educativos formativos de participación, protagónica, de manera individual y colectiva. Los protagonistas son las organizaciones de juventudes, mujeres, pueblos indígenas. LGBT`s, con quienes consolidamos procesos de institucionalidad democrática desde la sociedad civil.</p>

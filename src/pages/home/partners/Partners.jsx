@@ -13,11 +13,11 @@ const Partners = () => {
 
   return (
     <section className="main-partners center">
-      <h2 className="title-dark">Socios estratégicos</h2>
+      <h2 className="title-light">Socios estratégicos</h2>
       <div className='logos container'>
         {
           logosPartners.map((logo, index) => (
-            <div className='logo' key={index}>
+            <div className='logo-c-partner' key={index}>
               <img className='logo-partner' src={logo} alt="" />
             </div>
           ))

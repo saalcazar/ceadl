@@ -1,24 +1,148 @@
 .menu-container{
-    position: relative;
-    box-shadow: var(--shadow);
-    z-index: 20;
+  position: relative;
+  box-shadow: var(--shadow);
+  z-index: 20;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+.menu-toggle {
+  width: 100%;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-toggle-item {
+  width: 100%;
+  border-bottom: 1px solid var(--color-principal);
+}
+
+.menu-toggle-item > a {
+  margin-bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .7rem 0;
+}
+
+.menu-toggle-item:last-child {
+  border: none;
+}
+
+.menu-toggle-item:active {
+  background-color: var(--color-principal);
+}
+
+.logo-toggle-conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.logo-toggle {
+  width: 170px;
+  justify-self: center;
+  filter: saturate(0%);
+}
+
 .main-menu {
-    height: 90px;
+  height: 90px;
 }
 
 .logo-menu{
-    width: 200px;
+  width: 200px;
 }
 
 .nav-menu{
-    width: 60%;
+  width: 60%;
 }
 
 .menu-item {
-    transition: padding-bottom .3s;
+  transition: padding-bottom .3s;
 }
 
 .menu-item:hover {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+@media (width < 770px) {
+  .main-menu {
+    flex-direction: column;
+    padding: .8rem;
+    height: auto;
+  }
+  .nav-menu {
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: .7rem;
+  }
+}
+
+@media (width < 450px) {
+  .nav-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 20px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .active-menu {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color-mid);
+    border-radius: 10px 0 0 10px;
+    animation: toggle .4s forwards;
+  }
+
+  @keyframes toggle {
+    100% {
+      width: 85%;
+      height: 50vh;
+    }
+  }
+
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: var(--color-dark);
+    display: grid;
+    place-content: center;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    transition: transform .3s ease;
+  }
+
+  .toggle-animation {
+    animation: rotate .4s forwards;
+  }
+
+  .toggle-animation-dos {
+    animation: rotate-dos .4s forwards;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes rotate-dos {
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }

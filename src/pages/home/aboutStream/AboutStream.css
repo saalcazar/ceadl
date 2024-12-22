@@ -58,3 +58,18 @@
 .btn-stream{
     cursor: pointer;
 }
+
+@media (width < 450px) {
+    .about-stream-main {
+        background-image: linear-gradient( to bottom, var(--bg-color) 50%, var(--bg-color-mid) 50%);
+        height: auto;
+    }
+    .about-stream {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about, .stream {
+        width: 85%;
+    }
+}

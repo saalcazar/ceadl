@@ -24,6 +24,7 @@
 
 .p-about{
     line-height: 1.5rem;
+    font-weight: 200;
 }
 
 .vision, .mission{
@@ -101,12 +102,13 @@
 .goal-item{
     display: flex;
     margin-bottom: 1rem;
+    font-weight: 200;
 }
 
 .goal-item::before{
     content: var(--list-icon);
     margin-right: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .goal-img{

@@ -7,9 +7,9 @@ const Drugs = () => {
     const [cards] = usePetition(`posts/getAll?l=100&pg=1`, "DrugsPost", [])
 
     return(
-        <section className='main-firstPost center'>
-            <h2 className='title-dark'>Consumo de drogas</h2>
-            <div className='between container cards'>
+        <section className='main-drugsPost center'>
+            <h2 className='title-light'>Consumo de drogas</h2>
+            <div className='cards'>
             {
                 cards.map(({id, img, title, excerpt}) => (
                     <Card

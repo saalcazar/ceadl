@@ -5,6 +5,7 @@ import './SinglePost.css'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Comments from '../../components/comments/Comments'
+import useEmploy from '../../hooks/useEmploy'
 
 const SinglePost = () => {
 
@@ -27,6 +28,8 @@ const SinglePost = () => {
             console.log("La petición fallo")
         }) 
     }, [])
+
+    const user = useEmploy(employ)
 
     return(
         <>
@@ -53,7 +56,7 @@ const SinglePost = () => {
                 </div>
             </article>
         </div>
-        {/* <div className="author container">
+        <div className="author container">
             <div className="img-container img-author center">
                 <img src={user.img} alt="" />
             </div>
@@ -63,7 +66,7 @@ const SinglePost = () => {
                 <p className='paragraph-mid p-author'>{user.proffesion}</p>
                 <p className='paragraph-mid p-author'>{user.experience}</p>
             </div>
-        </div> */}
+        </div>
         <div className='comments container center'>
             <Comments
                 id = {post.id}

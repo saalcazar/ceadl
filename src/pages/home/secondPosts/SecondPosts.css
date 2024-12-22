@@ -1,6 +1,7 @@
 .main-secondposts{
     flex-direction: column;
     padding: 1rem;
+    background-color: var(--color-dark);
 }
 
 .img-card{
@@ -10,7 +11,9 @@
 }
 
 .img-card-article{
-    width: 350%
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .card-article{
@@ -18,10 +21,11 @@
     width: 100%;
     height: 100%;
     padding: 1rem;
-    background-color: var(--bg-color-mid-op);
+    background-color: rgba(12, 46, 65, .7);
     flex-direction: column;
-    opacity: 0;
-    transition: opacity .5s ease;
+    opacity: 1;
+    transition: backdrop-filter .5s ease, background-color .5s ease;
+    backdrop-filter: blur(5px);
 }
 
 .card-title{
@@ -29,12 +33,13 @@
 }
 
 .card-article:hover{
-    opacity: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0);
+    background-color: transparent;
 }
 
 .a-secondpost {
     background-color: var(--bg-color-dark);
     padding: .5rem;
     border-radius: 5px;
+    font-weight: 400;
 }
