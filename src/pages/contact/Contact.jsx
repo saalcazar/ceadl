@@ -23,19 +23,6 @@ const Contact = () => {
         </section>
         <section className="bg-light">
             <div className="between container direction-container">
-                <div className="map" dangerouslySetInnerHTML={{ __html: mapSucre }}></div>
-                <article className="direction bg-light center">
-                    <h3 className="title-dark title-direction">Sucre</h3>
-                    <ul>
-                        <li className='d-item'>Calle Junín Nro 407 esq. Hernando Silez, zona Central</li>
-                        <li className='d-item'>(+591) 4 6458270</li>
-                        <li className='d-item'>ceadl@ceadl.org.bo</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-        <section className="bg-dark">
-            <div className="between container direction-container">
                 <article className="direction bg-light center">
                     <h3 className="title-dark title-direction">La Paz</h3>
                     <ul>
